@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 
-export default class Home extends Component {
+import TextLink from './textLink';
+
+class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="home">
         <h1>Story Editor</h1>
+        <TextLink to="/library" text="Library" />
       </div>
     );
   }
 }
+
+export default Home;
